@@ -21,10 +21,13 @@ Asegúrate de tener estos archivos en la carpeta:
 
 ```
 REDES_PFO2/
-├── servidor.py
-├── bdd.py
 ├── auth.py
-└── requirements.txt
+├── bdd.py
+├── cliente.py
+├── evidencia-response-API.pdf
+├── README.md
+├── requirements.txt
+├── servidor.py
 └── tareas.db
 ```
 ## Ejecutar el servidor
@@ -32,9 +35,87 @@ REDES_PFO2/
 python servidor.py
 ```
 
-## Probar API
+## Ejecutar el cliente
+```bash
+python cliente.py
+```
 
-Usando cURL (Terminal)
+## Probar API (CONSOLA)
+
+```
+============================
+ Sistema de Gestión de Tareas 
+============================
+1) Registro
+2) Inicio de sesión
+3) Tareas
+4) Salir
+Seleccione una opción: 1
+
+=== Registro de Usuario ===
+Usuario: user-consola
+Contraseña: user-c123
+OK Usuario creado exitosamente
+
+============================
+ Sistema de Gestión de Tareas 
+============================
+1) Registro
+2) Inicio de sesión
+3) Tareas
+4) Salir
+Seleccione una opción: 2
+
+=== Inicio de Sesión ===
+Usuario: user-consola
+Contraseña: user-c123
+OK Credenciales válidas
+Ahora podés ver las tareas en la opción 3.
+
+============================
+ Sistema de Gestión de Tareas
+============================
+1) Registro
+2) Inicio de sesión
+3) Tareas
+4) Salir
+Seleccione una opción: 3
+
+============================
+1) Registro
+2) Inicio de sesión
+3) Tareas
+4) Salir
+============================
+1) Registro
+2) Inicio de sesión
+3) Tareas
+4) Salir
+Seleccione una opción: 3
+
+============================
+1) Registro
+2) Inicio de sesión
+3) Tareas
+3) Tareas
+4) Salir
+Seleccione una opción: 3
+
+=== Tareas ===
+<h1>Bienvenido al Sistema de Gestión de Tareas</h1>
+
+============================
+ Sistema de Gestión de Tareas
+============================
+1) Registro
+2) Inicio de sesión
+3) Tareas
+4) Salir
+Seleccione una opción: 4
+👋 Saliendo...
+```
+
+## Probar API (POSTMAN)
 
 ### Registrar un nuevo usuario:
 
@@ -76,7 +157,7 @@ curl --location 'http://localhost:5000/tareas' \
 
 ## Capturas de pantalla
 
-Evidencias en el documento `/evidencia-response-API.pdf`.
+Ubicadas en la carpeta `/capturas`.
 
 ## Respuestas Conceptuales
 
